@@ -36,13 +36,13 @@ python make.py
 ```
 This code performs the required preprocessing and organises the data into predict and target variable form with train, validation and test split.
 
-Please refer to the following [notebook](cls_multispec_uas/preprocess/vis.ipynb) for visualisation of each images and features.
+Please refer to the following [notebook](preprocess/vis.ipynb) for visualisation of each images and features.
 
 ## **Feature Selection and model optimization**
 ```shell
 python filter.py
 ```
-The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](cls_multispec/feat_filter)
+The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](feat_filter)
 <br>
 
 ## Project Structure
