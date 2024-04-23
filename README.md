@@ -24,7 +24,7 @@ Code for the processing of multispectral data to obtain cercospora leaf spot dis
 ```shell
 # Downloading the directory
 git clone git@github.com:saif8091/cls_multispec_uas.git
-cd disease_multispec
+cd cls_multispec_uas
 
 # Setting up environment
 conda env create -f environment.yml python=3.9
