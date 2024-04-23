@@ -1,0 +1,15 @@
+rdvi_skewness
+mcariosavi_q3
+mcariosavi_skewness
+ref_mean_1
+ref_q1_2
+ref_q3_3
+ref_skewness_1
+ref_skewness_3
+tex_dis_cv_1
+tex_mean_q3_1
+tex_mean_skewness_4
+tex_var_kurtosis_4
+tex_cor_cv_3
+tex_cor_cv_4
+tex_cor_q3_4

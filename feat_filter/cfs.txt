@@ -1,0 +1,15 @@
+clsi_cv
+gvi_kurtosis
+ref_skewness_3
+ref_skewness_4
+ref_kurtosis_3
+tex_cont_mean_4
+tex_cont_q1_4
+tex_homo_cv_3
+tex_homo_skewness_4
+tex_mean_mean_4
+tex_mean_cv_4
+tex_mean_q3_1
+tex_mean_skewness_1
+tex_var_cv_1
+tex_var_kurtosis_4

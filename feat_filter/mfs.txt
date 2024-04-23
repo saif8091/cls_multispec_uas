@@ -1,0 +1,8 @@
+rdvi_skewness
+ref_q3_3
+tex_cont_cv_2
+tex_cont_q3_4
+tex_homo_cv_4
+tex_homo_kurtosis_4
+tex_dis_cv_1
+tex_mean_q3_1
