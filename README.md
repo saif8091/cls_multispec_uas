@@ -30,7 +30,7 @@ cd disease_multispec
 conda env create -f environment.yml python=3.9
 conda activate cls_multispec
 ```
-**Note**: The file should be downloaded and placed as data directory in the project root. Otherwise the code will break. Look [here](#project-structure) for detailed directory structure.
+**Note**: The data should be downloaded and placed as data directory in the project root. Look [here](#project-structure) for detailed directory structure.
 
 ## **Preprocessing and feature generation**
 Run the following code:
@@ -41,7 +41,7 @@ This code performs the required preprocessing and organises the data into predic
 
 Please refer to the following [notebook](preprocess/vis.ipynb) for visualisation of each images and features.
 
-## **Feature Selection and model optimization**
+## **Feature selection and model optimization**
 ```shell
 python filter.py
 python score.py
