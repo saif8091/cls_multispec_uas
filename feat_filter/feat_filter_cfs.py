@@ -1,6 +1,14 @@
+import os
 import numpy as np
 import pandas as pd
 from src.feature_selection import FilterBasedFeatureSelection
+
+dir_name = 'feat_filter/filtered_features'
+
+# Check if the directory exists
+if not os.path.exists(dir_name):
+    # If the directory doesn't exist, create it
+    os.makedirs(dir_name)
 
 print('Performing correlation based feature selection')
 with pd.HDFStore('data/preprocessed_data/feat_split_comb.h5', mode='r') as store:
@@ -17,5 +25,5 @@ with pd.HDFStore('data/preprocessed_data/feat_split_comb.h5', mode='r') as store
 
 cfs = FilterBasedFeatureSelection(pd.concat([X_train,X_val]),pd.concat([y_train,y_val]),handle='cor')
 selected_features = cfs.select_based_on_threshold(min_r2=0.30, r2_thresh=0.80)
-open('feat_filter/cfs.txt', 'w').writelines(f"{item}\n" for item in selected_features)
+open('feat_filter/filtered_features/cfs.txt', 'w').writelines(f"{item}\n" for item in selected_features)
 print(f'Number of features selected for cfs: {len(selected_features)}')

@@ -17,5 +17,5 @@ with pd.HDFStore('data/preprocessed_data/feat_split_comb.h5', mode='r') as store
 
 mfs = FilterBasedFeatureSelection(pd.concat([X_train,X_val]),pd.concat([y_train,y_val]),handle='mi')
 selected_features = mfs.select_based_on_threshold(min_r2=0.50, r2_thresh=0.90)
-open('feat_filter/mfs.txt', 'w').writelines(f"{item}\n" for item in selected_features)
+open('feat_filter/filtered_features/mfs.txt', 'w').writelines(f"{item}\n" for item in selected_features)
 print(f'Number of features selected for mfs: {len(selected_features)}')

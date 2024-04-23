@@ -17,5 +17,5 @@ with pd.HDFStore('data/preprocessed_data/feat_split_comb.h5', mode='r') as store
 
 micorfs = FilterBasedFeatureSelection(pd.concat([X_train,X_val]),pd.concat([y_train,y_val]),handle='mi_cor')
 selected_features = micorfs.select_based_on_threshold(min_r2=0.75, r2_thresh=0.80)
-open('feat_filter/micorfs.txt', 'w').writelines(f"{item}\n" for item in selected_features)
+open('feat_filter/filtered_features/micorfs.txt', 'w').writelines(f"{item}\n" for item in selected_features)
 print(f'Number of features selected for micorfs: {len(selected_features)}')

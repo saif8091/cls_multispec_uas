@@ -9,6 +9,7 @@
 
 ## **Overview**
 Code for the processing of multispectral data to obtain cercospora leaf spot disease severity.
+![Algorithm](figures/overview.png)
 
 ## **Installation**
 ### Prerequisites
@@ -17,7 +18,7 @@ Code for the processing of multispectral data to obtain cercospora leaf spot dis
 ### Steps
 - Clone/download the repository 
 - Set up and activate the environment 
-- Download the dataset in the directory
+- Download the [dataset](https://data.mendeley.com/preview/v9b7rwrwx9?a=01237083-094e-4fa6-bf1e-8c5829e14e64) in the directory
 ```shell
 # Downloading the directory
 git clone git@github.com:saif8091/disease_multispec.git
@@ -27,7 +28,7 @@ cd disease_multispec
 conda env create -f environment.yml python=3.9
 conda activate cls_multispec
 ```
-**Note**: The file should be downloaded and placed as data directory in the project root. Otherwise the code will break.
+**Note**: The file should be downloaded and placed as data directory in the project root. Otherwise the code will break. Look [here](#project-structure) for detailed directory structure.
 
 ## **Preprocessing and feature generation**
 Run the following code:
@@ -42,7 +43,7 @@ Please refer to the following [notebook](preprocess/vis.ipynb) for visualisation
 ```shell
 python filter.py
 ```
-The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](feat_filter)
+The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](feat_filter/filtered_features)
 <br>
 
 ## Project Structure
