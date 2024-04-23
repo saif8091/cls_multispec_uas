@@ -27,51 +27,13 @@ cd disease_multispec
 conda env create -f environment.yml python=3.9
 conda activate cls_multispec
 ```
+**Note**: The file should be downloaded and placed as data directory in the project root. Otherwise the code will break.
 
 ## **Preprocessing and feature generation**
 This code performs the required preprocessing and oraganises the data into predict and target variable form with train, validation and test split
 ```shell
 python make.py
 ```
-
-## **Main Code Directory**
-
-### 1_preprocess
-Contains code for going from raw multispectral and field assesed CLS data to X and y dataset format split into train, validation and test
-
-### 2_model_slect
-Contains code for using split X, y data and generating various features thhrough featuring filturing and evaluating various model configuration
-
-### 3_results
-Contains code for evaluating and illustrating the model performances
-
-### feature analysis
-Tests and visualisation of features
-
-### qgis_proj
-Contains qgis project files used to generate heat map
-
-### src
-Contains all the required functions
-
-## gitignore directories
-### data
-Contains all the multispectral image and raw CLS excel file data
-
-### entire_flight
-Contains the entire raster file
-
-### field_analysis
-Code for generating CLS heat maps
-
-## Legacy Code Directory
-### classification
-Contains my classifier attempt code
-### CLS_split
-Contains code for my attempt at splitting the problem into classification and regression
-### rough_codes
-Contains past codes and methods used (probably doesn't work anymore due to directory changes)
-
 <br>
 
 ## Project Structure
@@ -79,7 +41,12 @@ Contains past codes and methods used (probably doesn't work anymore due to direc
 The directory structure of new project looks like this:
 
 ```
-├── 1_preprocess           <- preprocessing directory
+├───data
+│    ├──
+│
+├───figures
+│                  
+├───preprocess           <- preprocessing and feature generation directory
 │   ├── callbacks                <- Callbacks configs
 │   ├── data                     <- Data configs
 │   ├── debug                    <- Debugging configs
