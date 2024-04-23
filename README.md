@@ -23,7 +23,7 @@ Code for the processing of multispectral data to obtain cercospora leaf spot dis
 - Download the [dataset](https://data.mendeley.com/preview/v9b7rwrwx9?a=01237083-094e-4fa6-bf1e-8c5829e14e64) in the directory
 ```shell
 # Downloading the directory
-git clone git@github.com:saif8091/disease_multispec.git
+git clone git@github.com:saif8091/cls_multispec_uas.git
 cd disease_multispec
 
 # Setting up environment
