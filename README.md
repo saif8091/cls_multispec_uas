@@ -84,7 +84,6 @@ The directory structure of the project:
 |   ├───cls_interp.py                   <- Code for CLS interpolation
 |   ├───feat_split.py                   <- Code for train/val/test split
 |   ├───gen_feat.py                     <- Code for generating features
-|   ├───clear
 |   ├───gen_veg_im.py                   <- Code for vegetation extraction
 |   ├───vis.ipynb                       <- Notebook for visualisation
 |   └───zip_im.py                       <- Zipping all raw multispectral images into single dictionary
