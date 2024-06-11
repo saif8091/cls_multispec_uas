@@ -46,7 +46,7 @@ Please refer to the following [notebook](preprocess/vis.ipynb) for visualisation
 python filter.py
 python score.py
 ```
-The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](feat_filter/filtered_features).
+The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](feat_filter/filtered_features)
 The second code generates model scores at different feature and hyperparameter combinations for random forest, xtreme gradient boosting, support vector and partial least square regression models. The scores can be found [here.](mod_opt/model_scores)
 
 ## **Results**
@@ -56,7 +56,7 @@ Detailed result analysis can be found [here.](results.ipynb)
 
 ## **Project Structure**
 
-The directory structure of new project looks like this:
+The directory structure of the project:
 
 ```
 ├───data                            <- All raw and preprocessed data will be stored here
