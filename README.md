@@ -1,6 +1,6 @@
 <div align="center">
 
-# Disease severity estimation from multispectral data of Table Beets
+# Estimation of Cercospora Leaf Spot Disease Severity in Table Beets from UAS Multispectral Images
 
 <!-- Python Version Badge -->
 [![Python Version](https://img.shields.io/badge/python-3.9-blue.svg)](https://python.org)
@@ -8,7 +8,7 @@
 </div>
 
 ## **Overview**
-Code for the processing of multispectral data to obtain cercospora leaf spot disease severity.
+Code for the processing of UAS multispectral data to obtain cercospora leaf spot disease severity.
 <p align="center">
   <img src="figures/overview.png" alt="Algorithm">
 </p>
