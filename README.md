@@ -46,7 +46,7 @@ Please refer to the following [notebook](preprocess/vis.ipynb) for visualisation
 python filter.py
 python score.py
 ```
-The first code snippet performs three types of feature filturing and the filtered feature can be found [here.](feat_filter/filtered_features)
+The first code snippet performs three types of feature filtering and the filtered feature can be found [here.](feat_filter/filtered_features)
 The second code generates model scores at different feature and hyperparameter combinations for random forest, xtreme gradient boosting, support vector and partial least square regression models. The scores can be found [here.](mod_opt/model_scores)
 
 ## **Results**
@@ -64,7 +64,7 @@ The directory structure of the project:
 │   ├───multispec_2023                  <- 2023 raw images
 │   └───CLS_DS.csv                      <- Field assessed disease severity
 │
-├───feat_filter                     <- Directory containing all feature filter code and filtured features
+├───feat_filter                     <- Directory containing all feature filter code and filtered features
 │   ├───filtered_features               <- Directory containing filtered features
 │   ├───feat_filter_cfs.py              <- Code for correlation based feature filter
 │   ├───feat_filter_mfs.py              <- Code for MI based feature filter
