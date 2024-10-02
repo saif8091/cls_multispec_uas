@@ -7,13 +7,13 @@
 
 </div>
 
-## **Overview**
+## 📜**Overview**
 Code for the processing of UAS multispectral data to obtain cercospora leaf spot disease severity.
 <p align="center">
   <img src="figures/overview.png" alt="Algorithm">
 </p>
 
-## **Installation**
+## 🛠️**Installation**
 ### Prerequisites
 - Python 3.9
 - Conda
@@ -32,7 +32,7 @@ conda activate cls_multispec
 ```
 **Note**: The data should be downloaded and placed as data directory in the project root. Look [here](#project-structure) for detailed directory structure.
 
-## **Preprocessing and feature generation**
+## 🔄**Preprocessing and feature generation**
 Run the following code:
 ```shell
 python make.py
@@ -41,7 +41,7 @@ This code performs the required preprocessing and organises the data into predic
 
 Please refer to the following [notebook](preprocess/vis.ipynb) for visualisation of each images and features.
 
-## **Feature selection and model optimization**
+## 🔧**Feature selection and model optimization**
 ```shell
 python filter.py
 python score.py
@@ -49,12 +49,12 @@ python score.py
 The first code snippet performs three types of feature filtering and the filtered feature can be found [here.](feat_filter/filtered_features)
 The second code generates model scores at different feature and hyperparameter combinations for random forest, xtreme gradient boosting, support vector and partial least square regression models. The scores can be found [here.](mod_opt/model_scores)
 
-## **Results**
+## 📈**Results**
 Detailed result analysis can be found [here.](results.ipynb)
 
 <br>
 
-## **Project Structure**
+## 📁**Project Structure**
 
 The directory structure of the project:
 
@@ -100,6 +100,6 @@ The directory structure of the project:
 ```
 <br>
 
-## **Resources**
+## 📚**Resources**
 - [Data](https://data.mendeley.com/datasets/v9b7rwrwx9/1)
 - [Gray Level Co-Occurrence Matrix calculation code](https://github.com/tzm030329/GLCM)
