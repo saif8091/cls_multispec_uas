@@ -8,3 +8,5 @@ from mod_opt.xgb import *
 from mod_opt.svr import *
 # Perform Partial Least Square regression
 from mod_opt.plsr import *
+# Perform MLP regression
+from mod_opt.mlp import *
