@@ -28,7 +28,7 @@ def zip_images_h(r_dir, rot_angle):
     count = 0
     for rfile in os.listdir(r_dir):
         rpath = os.path.join(r_dir,rfile)
-        im = rioxarray.open_rasterio(rpath)
+        im = rioxarray.open_rasterio(rpath)/100
         plt_num, flt_date = rfile.split('_')
         flt_date = flt_date.removeprefix('r').removesuffix('.tif')
         plt_num = int(plt_num)
