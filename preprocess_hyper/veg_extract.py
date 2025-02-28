@@ -37,5 +37,12 @@ bin_masks_h = apply_and_on_flights(bin_masks_h, '20220726', flights, plots)
 
 # Extract vegetation using binary masks
 veg_h = veg_extract_using_masks(prep_h, bin_masks_h)
+
+# Convert nan values to 0 and to numpy array to be consistent with later code
+func =  [(lambda x: x.fillna(0), {}),
+         (lambda x: x.values, {}),
+        (lambda x: x.transpose(1, 2, 0), {})]
+
+veg_h_numpy = apply_functions_to_images(veg_h, func)
 # Save the processed images
-pickle.dump(veg_h, open('data/preprocessed_data/veg_h.pkl', 'wb'))
+pickle.dump(veg_h_numpy, open('data/preprocessed_data/veg_h.pkl', 'wb'))
