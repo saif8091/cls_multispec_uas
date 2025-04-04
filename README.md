@@ -27,7 +27,7 @@ git clone git@github.com:saif8091/cls_multispec_uas.git
 cd cls_multispec_uas
 
 # Setting up environment
-conda env create -f environment.yml python=3.9
+conda env create -f environment.yml
 conda activate cls_multispec
 ```
 **Note**: The data should be downloaded and placed as data directory in the project root. Look [here](#project-structure) for detailed directory structure.
